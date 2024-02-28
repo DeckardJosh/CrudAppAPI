@@ -20,8 +20,7 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //TEST
-        //This works to fix the issue, but shouldnt setShouldCache(false) force a delete and rerun of the records list?
+        //This is to reset the recordslist so that it does not duplicate on the recycler view
         recordsList.clear()
 
         recyclerView = findViewById(R.id.recRecords)
