@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowRecord">
+
+    <EditText
+        android:id="@+id/edtImageData2"
+        android:layout_width="153dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="120dp"
+        android:autofillHints="image url data"
+        android:hint="image url data"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtImageUrl"
+        app:layout_constraintStart_toEndOf="@+id/txtRating" />
+
+    <TextView
+        android:id="@+id/txtImageUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/image"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtRating"
+        app:layout_constraintTop_toBottomOf="@+id/txtRating" />
+
+    <Button
+        android:id="@+id/btnAllRecords"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:onClick="onShowAllClick"
+        android:text="@string/show_all_records"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:onClick="onCancelClick"
+        android:text="@string/cancel"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnAddRecord"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNameData"
+        android:layout_width="153dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="120dp"
+        android:autofillHints="name data"
+        android:hint="name data"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtName"
+        app:layout_constraintStart_toEndOf="@+id/txtName" />
+
+    <EditText
+        android:id="@+id/edtDescriptionData"
+        android:layout_width="156dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="120dp"
+        android:autofillHints="description data"
+        android:hint="description data"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtDescription"
+        app:layout_constraintStart_toEndOf="@+id/txtDescription" />
+
+    <EditText
+        android:id="@+id/edtPriceData"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="120dp"
+        android:autofillHints="price data"
+        android:hint="price data"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtPrice"
+        app:layout_constraintStart_toEndOf="@+id/txtPrice" />
+
+    <EditText
+        android:id="@+id/edtRatingData"
+        android:layout_width="153dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="120dp"
+        android:autofillHints="rating data"
+        android:hint="rating data"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtRating"
+        app:layout_constraintStart_toEndOf="@+id/txtRating" />
+
+    <TextView
+        android:id="@+id/txtRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/rating"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtPrice"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrice" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/price"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtDescription"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/description"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <TextView
+        android:id="@+id/txtAddRecordHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/edit_record"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddRecordHeader" />
+
+    <Button
+        android:id="@+id/btnAddRecord"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="onSubmitClick"
+        android:text="@string/submit_changes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtImageData2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

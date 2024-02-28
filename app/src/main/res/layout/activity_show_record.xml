@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowRecord">
+
+    <TextView
+        android:id="@+id/txtImage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:text="@string/image_header"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddRecordHeader" />
+
+    <TextView
+        android:id="@+id/txtIDData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:hint="id data"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtID"
+        app:layout_constraintStart_toEndOf="@+id/txtID" />
+
+    <TextView
+        android:id="@+id/txtID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/id"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddRecordHeader" />
+
+    <Button
+        android:id="@+id/btnShowAllRecords"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:onClick="onShowAllClick"
+        android:text="@string/show_all_records"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/edtNameData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:hint="name data"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtName"
+        app:layout_constraintStart_toEndOf="@+id/txtName" />
+
+    <TextView
+        android:id="@+id/edtDescriptionData"
+        android:layout_width="132dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="120dp"
+        android:hint="description data"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtDescription"
+        app:layout_constraintStart_toEndOf="@+id/txtDescription" />
+
+    <TextView
+        android:id="@+id/edtPriceData"
+        android:layout_width="132dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="120dp"
+        android:hint="price data"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtPrice"
+        app:layout_constraintStart_toEndOf="@+id/txtPrice" />
+
+    <TextView
+        android:id="@+id/edtRatingData"
+        android:layout_width="132dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="120dp"
+        android:hint="rating data"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtRating"
+        app:layout_constraintStart_toEndOf="@+id/txtRating" />
+
+    <TextView
+        android:id="@+id/txtDateModData"
+        android:layout_width="132dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="120dp"
+        android:hint="date mod data"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtDateModified"
+        app:layout_constraintStart_toEndOf="@+id/txtDateModified" />
+
+    <TextView
+        android:id="@+id/txtDateCreateData"
+        android:layout_width="132dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="120dp"
+        android:hint="date create data"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtDateCreated"
+        app:layout_constraintStart_toEndOf="@+id/txtDateCreated" />
+
+    <TextView
+        android:id="@+id/txtDateCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/date_created"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtDateModified"
+        app:layout_constraintTop_toBottomOf="@+id/txtDateModified" />
+
+    <TextView
+        android:id="@+id/txtDateModified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/date_modified"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtRating"
+        app:layout_constraintTop_toBottomOf="@+id/txtRating" />
+
+    <TextView
+        android:id="@+id/txtRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/rating"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtPrice"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrice" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/price"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtDescription"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/description"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <TextView
+        android:id="@+id/txtAddRecordHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/show_record"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtID"
+        app:layout_constraintTop_toBottomOf="@+id/txtID" />
+
+    <Button
+        android:id="@+id/btnAddRecord"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:onClick="onDeleteClick"
+        android:text="@string/delete"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnEdit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="onEditClick"
+        android:text="@string/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDateCreateData" />
+
+    <ImageView
+        android:id="@+id/imgImageData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtImage2"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

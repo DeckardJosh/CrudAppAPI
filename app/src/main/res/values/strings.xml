@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Crud Own API</string>
+    <string name="all_records">All Records</string>
+    <string name="new_record">New Record</string>
+    <string name="show_record">Show Record</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="rating">Rating</string>
+    <string name="date_modified">Date Modified</string>
+    <string name="date_created">Date Created</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="submit_changes">Submit Changes</string>
+    <string name="edit_record">Edit Record</string>
+    <string name="add_record">Add Record</string>
+    <string name="show_all_records">Show All Records</string>
+    <string name="mock">Test Data</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear">Clear Data</string>
+    <string name="id">ID</string>
+    <string name="image">Image (URL)</string>
+    <string name="image_header">Image</string>
+</resources>
